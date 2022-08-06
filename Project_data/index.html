@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Home</title>
+</head>
+
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .nav {
+        border-bottom: 2px solid black;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        justify-content: center;
+        font-weight: bolder;
+    }
+
+    .icon {
+        height: 12vh;
+        width: 25%;
+        padding-top: 14px;
+        font-size: 1.5rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-style: oblique;
+
+    }
+
+    .icon h3 {
+        font-size: 40px;
+    }
+
+    .items {
+        width: 75%;
+        height: 12vh;
+        font-size: 1.1em;
+        padding-top: 20px;
+
+    }
+
+    .items ul {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .items li {
+        list-style: none;
+    }
+
+    .items a {
+        box-shadow: 2px 3px 3px green ;
+        border: 1px solid black;
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        color: rgb(26 245 11);
+    }
+
+    .items a:hover {
+        transition-duration: 2s;
+        padding: 5px;
+        border-radius: 30px;
+        color: white;
+        background-color: black;
+    }
+
+    .main {
+        width: 100%;
+        font-weight: 500%;
+        height: 100vh;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav::before {
+        content: "";
+        background-image: url('newweb.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    .cont {
+        padding: 10px;
+        text-align: center;
+        margin: 0px 230px;
+        border-radius: 40px;
+        border: 1px solid rgb(25, 24, 24);
+        justify-content: center;
+        background-color: palegreen;
+        color: white;
+        position: relative;
+        top: 22%;
+        box-shadow: 4px 4px 7px palevioletred inset;
+    }
+
+    .cont h1 {
+        font-size: 50px;
+    }
+
+    .cont p {
+        font-size: 30px;
+    }
+
+    .button {
+        margin: 20px 0px;
+        background-color: white;
+        cursor: pointer;
+        padding: 5px;
+        color: green;
+        border-radius: 5px;
+        box-shadow: 2px 2px 3px red;
+    }
+
+    .button:hover {
+        background-color: black;
+        color: white;
+        transition-duration: 2s;
+        border-radius: 12px;
+        padding: 5px;
+    }
+    .all-text{
+        font-size: 20px;
+    }
+
+    @media screen and (max-width:1000px){
+
+        .all-text{
+            font-size: 35px;
+        }
+        .icon h3{
+            font-size: 50px;
+        }
+        .cont{
+            padding: 40px;
+        }
+        
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="icon">
+                <a href="akki-index.html">
+                    <h3 class="all-text">TraVilla</h3>
+                </a>
+            </div>
+            <div class="items">
+                <ul>
+                    <li class="all-text"><a href="index.html"><i> Home</i></a></li>
+                    <li class="all-text"><a href="services.html"> <i>Services</i></a></li>
+                    <li class="all-text"><a href="about.html"> <i>About</i></a></li>
+                    <li class="all-text"><a href="conta.html"> <i>contact us</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cont">
+            <h1 class="all-text"><u>Want to enjoy beauty of nature ?</u></h1>
+            <p class="all-text"><i>Book your travelling tour now!</i></p>
+            <a href="akki-place.html" target="_blank"><button class="button all-text"><i>Select Place</i></button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

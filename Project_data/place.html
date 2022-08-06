@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Select place</title>
+</head>
+<style>
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .upper {
+        color: aqua;
+        background-color: burlywood;
+        width: 100%;
+        height: 60px;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    .div1 {
+        width: 100%;
+        display: flex;
+    }
+
+    .section {
+        width: 100%;
+        height: 350px;
+        border: 1px solid black;
+        margin: 3px;
+        padding: 0px;
+
+    }
+
+    .sectionr {
+        text-align: center;
+
+
+    }
+
+    img {
+        height: 350px;
+        width: 100%;
+    }
+
+    .form-div {
+        width: 100%;
+        height: 300px;
+        text-align: center;
+    }
+
+    .form {
+        min-height: 230px;
+        padding-top: 10px;
+        min-width: 250px;
+        max-width: auto;
+        justify-content: center;
+        text-align: center;
+        border: 2px solid rgb(240, 100, 100);
+        margin: 20px 400px;
+        background-color: rgb(99, 252, 252);
+        box-shadow: 5px 5px 5px 2px plum;
+        border-radius: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: blueviolet;
+    }
+
+    .upper a {
+        position: relative;
+        top: 1%;
+        right: 250px;
+    }
+    @media  screen and (max-width:1000px) {
+
+        .div1{
+            display: flex;
+            flex-direction: column;
+        }
+        .texta{
+            font-size: 25px;
+        }
+        
+    }
+</style>
+
+<body>
+    <div class="upper">
+        <a href="index.html">HOME</a>
+        Top places you must visit
+    </div>
+    <div class="div1">
+        <div class="section"><img src="cappa.jpg" alt=""></div>
+        <div class="section sectionr texta">
+            <h3>CAPPADOCIA,TURKEY</h3><BR></BR>
+            Cappadocia is a living example of just how odd yet beautiful nature can be.
+            It presents a fantasy-like landscape that looks like it’s been plucked out of a fairy tale, alien-like hills
+            and boulders that seem as if they’ve been transported from another planet.
+            The humans who once lived here used the area’s soft stone
+            to create underground shelters, leaving all kinds of weird architectural wonders in their wake.
+        </div>
+    </div>
+    <div class="div1">
+        <div class="section"><img src="white.jpg" alt=""></div>
+        <div class="section sectionr texta">
+            <H3>WHITEHAVEN BEACH,AUSTRALIA</H3> <BR></BR>
+            It’s easy to see why the Whitehaven Beach ranks among the most photographed beaches in the world.
+            The magnificent 7 km stretch of white sand that feels like your own private slice
+            of heaven presents an aura of peace and serenity, letting you experience relaxation at its very best.
+            The beach is accessible via boat from Hamilton Island and the ports of Shute Harbour and Airlie Beach.
+        </div>
+    </div>
+    <div class="div1">
+        <div class="section"><img src="FAIRY.JPG" alt=""></div>
+
+        <div class="section sectionr texta">
+            <h3>FAIRY POOLS,SCOTLAND</h3><BR></BR>
+            You might suddenly start believing in fairies the moment your eyes fall on the Fairy Pool, an ethereal oasis
+            that bewitches visitors
+            with its crystal clear water, picture-perfect scenery and magical atmosphere. The waters are freezing,
+            but if you’re searching for wild swimming adventures, it truly doesn’t get better than this
+        </div>
+    </div>
+    <div class="div1">
+        <div class="section"><img src="GRAND.JPG" alt=""></div>
+
+        <div class="section sectionr texta">
+            <h3>GRAND CANYON NP,USA</h3><BR></BR>
+            There’s a reason more than 5 million people choose to visit the Grand Canyon each year. It’s one of
+            the most magical destinations on the planet. Irrespective of how much you read about the Grand Canyon,
+            you’re sure to end up
+            being spellbound, for nothing prepares you for the magical sight
+            that this wonder has to offer. Considered to rank among one of the top 7 wonders of the world,
+        </div>
+    </div>
+    <div class="div1">
+        <div class="section"><img src="MACHU.JPG" alt=""></div>
+        <div class="section sectionr texta">
+            <H3>MACHU PICCHU,PERU</H3><BR></BR>
+            And finally there’s the great Machu Picchu, the so-called lost civilization of the Incas. Machu Picchu was
+            built around the year 1450 and was occupied for almost 100 years before the Spanish Conquest. This
+            mesmerizing city was
+            never discovered by the Spaniards and was literally forgotten until the early 20th century,
+        </div>
+    </div>
+    <div class="form-div">
+        <form class="form">
+            <label for="">NAME:</label>
+            <input type="text" placeholder="Enter your name"><br><br>
+            <label for="">EMAIL:</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email"><br><br>
+             <h3>SELECT PLACE YOU WANT TO VISIT </h3><BR></BR>
+            <select>
+                <option value="MACHU PICCHU,PERU">MACHU PICCHU,PERU</option>
+                <option value="">GRAND CANYON NP,USA</option>
+                <option value="">FAIRY POOLS,SCOTLAND</option>
+                <option value="">WHITEHAVEN BEACH,AUSTRALIA</option>
+                <option value="">CAPPADOCIA,TURKEY</option>
+            </select><br><br>
+            Select Date:
+            <br>
+            <input type="date"><br><br>
+            <button class="button"><a href="#">SUBMIT</a></button>
+        </form>
+    </div>
+</body>
+
+</html>
